@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /git%20clone%20sunmence%20project/DUTTRUSTBK_SERVER
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [QSA,L]
